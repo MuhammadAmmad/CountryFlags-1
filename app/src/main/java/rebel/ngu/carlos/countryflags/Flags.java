@@ -47,7 +47,7 @@ public class Flags extends AppCompatActivity  implements SearchView.OnQueryTextL
 
         // Linear Layout
         LinearLayout layout = (LinearLayout) findViewById(R.id.linearLayout);
-
+        layout.setBackgroundResource(R.color.background);
 
 
         ArrayList<CountrySimple> country_list = null;
@@ -84,6 +84,7 @@ public class Flags extends AppCompatActivity  implements SearchView.OnQueryTextL
 
             RelativeLayout h_layout = new RelativeLayout(this);
             h_layout.setMinimumHeight((int)(width*SIZE_FLAG_SMALL));
+            h_layout.setBackgroundResource(R.color.background);
             layout.addView(h_layout);
 
             // FLAG
@@ -164,6 +165,7 @@ public class Flags extends AppCompatActivity  implements SearchView.OnQueryTextL
         ArrayList<CountrySimple> country_list = getSimpleCountries(this, newText);
 
         for(CountrySimple country :  country_list) {
+            System.out.println(country.getId());
             layout.getChildAt(country.getId()*2-1).setVisibility(View.VISIBLE);
             layout.getChildAt(country.getId()*2).setVisibility(View.VISIBLE);
         }

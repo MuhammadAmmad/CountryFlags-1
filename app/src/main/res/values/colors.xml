@@ -4,6 +4,6 @@
     <color name="colorPrimaryDark">#E0E0E0</color>
     <color name="colorAccent">#D0D0D0</color>
 
-    <color name="background">#FFFFFF</color>
+    <color name="background">#FAFAFA</color>
     <color name="greyPressed">#EBEBEB</color>
 </resources>
