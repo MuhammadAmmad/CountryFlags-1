@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Countries Information</string>
+    <string name="title_activity_country_info">CountryInfo</string>
+    <string name="hint_search">Search</string>
+</resources>
